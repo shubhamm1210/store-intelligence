@@ -1,0 +1,60 @@
+version: "3.9"
+
+# ── Shared volume ─────────────────────────────────────────────────────────────
+# All three services read/write the same events.db file.
+# pipeline writes → api reads → dashboard reads via api
+volumes:
+  db_data:
+
+services:
+
+  # ── 1. Detection Pipeline ────────────────────────────────────────────────────
+  pipeline:
+    build:
+      context: ./pipeline
+    container_name: si_pipeline
+    volumes:
+      - db_data:/data          # events.db lives here
+      - ./video:/video         # mount your CCTV footage here
+    environment:
+      EVENTS_DB: /data/events.db
+    command: >
+      python detector.py
+        --source /video/input.mp4
+    # If you want to process a different file:
+    #   docker compose run pipeline python detector.py --source /video/yourfile.mp4
+    restart: "no"              # pipeline runs once per video, not a server
+
+  # ── 2. FastAPI backend ────────────────────────────────────────────────────────
+  api:
+    build:
+      context: ./api
+    container_name: si_api
+    volumes:
+      - db_data:/data
+    environment:
+      EVENTS_DB: /data/events.db
+    ports:
+      - "8000:8000"
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ── 3. Streamlit dashboard ────────────────────────────────────────────────────
+  dashboard:
+    build:
+      context: ./dashboard
+    container_name: si_dashboard
+    environment:
+      API_BASE: http://api:8000     # uses docker internal network name
+    ports:
+      - "8501:8501"
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
