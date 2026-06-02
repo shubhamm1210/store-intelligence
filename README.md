@@ -119,7 +119,7 @@ store-intelligence/
 ## 1. Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/shubhamm1210/store-intelligence.git
 cd store-intelligence
 ```
 
