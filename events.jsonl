@@ -1,0 +1,273 @@
+{"id": 1, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-05-31T09:58:09.616277Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 2, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-05-31T09:58:15.147620Z", "frame_no": 0, "metadata": null}
+{"id": 3, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-05-31T09:58:15.172283Z", "frame_no": 0, "metadata": null}
+{"id": 4, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-05-31T09:58:15.196559Z", "frame_no": 0, "metadata": null}
+{"id": 5, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:15.220128Z", "frame_no": 0, "metadata": null}
+{"id": 6, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-05-31T09:58:15.243124Z", "frame_no": 0, "metadata": null}
+{"id": 7, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-05-31T09:58:17.516694Z", "frame_no": 15, "metadata": null}
+{"id": 8, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:17.811746Z", "frame_no": 17, "metadata": null}
+{"id": 9, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:20.030396Z", "frame_no": 34, "metadata": null}
+{"id": 10, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:22.376178Z", "frame_no": 53, "metadata": null}
+{"id": 11, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-05-31T09:58:23.948973Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 8.8}"}
+{"id": 12, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-05-31T09:58:23.972972Z", "frame_no": 64, "metadata": null}
+{"id": 13, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:24.127002Z", "frame_no": 65, "metadata": null}
+{"id": 14, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-05-31T09:58:24.932573Z", "frame_no": 71, "metadata": null}
+{"id": 15, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-05-31T09:58:24.955574Z", "frame_no": 71, "metadata": null}
+{"id": 16, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:25.359262Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.2}"}
+{"id": 17, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:25.382263Z", "frame_no": 74, "metadata": null}
+{"id": 18, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:26.045917Z", "frame_no": 79, "metadata": null}
+{"id": 19, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:26.218328Z", "frame_no": 80, "metadata": null}
+{"id": 20, "event_type": "zone_entered", "track_id": 12, "zone": "skin_care", "timestamp": "2026-05-31T09:58:26.482771Z", "frame_no": 82, "metadata": null}
+{"id": 21, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:26.673335Z", "frame_no": 83, "metadata": "{\"dwell_seconds\": 1.3}"}
+{"id": 22, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:26.695479Z", "frame_no": 83, "metadata": null}
+{"id": 23, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:26.718650Z", "frame_no": 83, "metadata": null}
+{"id": 24, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:27.047785Z", "frame_no": 85, "metadata": "{\"dwell_seconds\": 0.4}"}
+{"id": 25, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:27.070264Z", "frame_no": 85, "metadata": null}
+{"id": 26, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:27.242878Z", "frame_no": 86, "metadata": "{\"dwell_seconds\": 0.2}"}
+{"id": 27, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:27.264968Z", "frame_no": 86, "metadata": null}
+{"id": 28, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:27.577507Z", "frame_no": 88, "metadata": "{\"dwell_seconds\": 0.3}"}
+{"id": 29, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:27.601382Z", "frame_no": 88, "metadata": null}
+{"id": 30, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:27.818999Z", "frame_no": 89, "metadata": null}
+{"id": 31, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-05-31T09:58:28.700805Z", "frame_no": 95, "metadata": "{\"dwell_seconds\": 1.1}"}
+{"id": 32, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:28.722418Z", "frame_no": 95, "metadata": null}
+{"id": 33, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:28.745419Z", "frame_no": 95, "metadata": null}
+{"id": 34, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:29.933215Z", "frame_no": 104, "metadata": null}
+{"id": 35, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:29.954216Z", "frame_no": 104, "metadata": null}
+{"id": 36, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:30.517205Z", "frame_no": 108, "metadata": null}
+{"id": 37, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:31.848702Z", "frame_no": 117, "metadata": null}
+{"id": 38, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:31.872093Z", "frame_no": 117, "metadata": null}
+{"id": 39, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-05-31T09:58:32.169784Z", "frame_no": 119, "metadata": null}
+{"id": 40, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-05-31T09:58:32.363473Z", "frame_no": 120, "metadata": null}
+{"id": 41, "event_type": "zone_entered", "track_id": 7, "zone": "entrance", "timestamp": "2026-05-31T09:58:32.980711Z", "frame_no": 124, "metadata": null}
+{"id": 42, "event_type": "zone_entered", "track_id": 13, "zone": "foh", "timestamp": "2026-05-31T09:58:33.434630Z", "frame_no": 127, "metadata": null}
+{"id": 43, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:33.749201Z", "frame_no": 129, "metadata": null}
+{"id": 44, "event_type": "zone_entered", "track_id": 14, "zone": "entrance", "timestamp": "2026-05-31T09:58:35.228383Z", "frame_no": 141, "metadata": null}
+{"id": 45, "event_type": "person_exited", "track_id": 5, "zone": "foh", "timestamp": "2026-05-31T09:58:39.591527Z", "frame_no": 172, "metadata": "{\"reason\": \"track_lost\"}"}
+{"id": 46, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-05-31T09:58:39.866077Z", "frame_no": 173, "metadata": null}
+{"id": 47, "event_type": "zone_exited", "track_id": 13, "zone": "foh", "timestamp": "2026-05-31T09:58:41.036036Z", "frame_no": 179, "metadata": "{\"dwell_seconds\": 7.6}"}
+{"id": 48, "event_type": "zone_entered", "track_id": 13, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:41.060376Z", "frame_no": 179, "metadata": null}
+{"id": 49, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-05-31T09:58:43.481072Z", "frame_no": 192, "metadata": null}
+{"id": 50, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-05-31T09:58:44.295405Z", "frame_no": 196, "metadata": null}
+{"id": 51, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-05-31T09:58:44.968364Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 1, \"frames_processed\": 200}"}
+{"id": 52, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-06-01T17:07:28.810358Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 53, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-06-01T17:07:29.459147Z", "frame_no": 0, "metadata": null}
+{"id": 54, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-06-01T17:07:29.480156Z", "frame_no": 0, "metadata": null}
+{"id": 55, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-06-01T17:07:29.501150Z", "frame_no": 0, "metadata": null}
+{"id": 56, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:29.524148Z", "frame_no": 0, "metadata": null}
+{"id": 57, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-01T17:07:29.549573Z", "frame_no": 0, "metadata": null}
+{"id": 58, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-06-01T17:07:31.301300Z", "frame_no": 15, "metadata": null}
+{"id": 59, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:31.540542Z", "frame_no": 17, "metadata": null}
+{"id": 60, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:33.530524Z", "frame_no": 34, "metadata": null}
+{"id": 61, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:35.812878Z", "frame_no": 53, "metadata": null}
+{"id": 62, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-06-01T17:07:37.209569Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 7.7}"}
+{"id": 63, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-01T17:07:37.234572Z", "frame_no": 64, "metadata": null}
+{"id": 64, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:37.403116Z", "frame_no": 65, "metadata": null}
+{"id": 65, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-01T17:07:38.089318Z", "frame_no": 71, "metadata": null}
+{"id": 66, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-01T17:07:38.141116Z", "frame_no": 71, "metadata": null}
+{"id": 67, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:38.538975Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.1}"}
+{"id": 68, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:38.560976Z", "frame_no": 74, "metadata": null}
+{"id": 69, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:39.147930Z", "frame_no": 79, "metadata": null}
+{"id": 70, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:39.316506Z", "frame_no": 80, "metadata": null}
+{"id": 71, "event_type": "zone_entered", "track_id": 12, "zone": "skin_care", "timestamp": "2026-06-01T17:07:39.605300Z", "frame_no": 82, "metadata": null}
+{"id": 72, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:39.773021Z", "frame_no": 83, "metadata": "{\"dwell_seconds\": 1.2}"}
+{"id": 73, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:39.797022Z", "frame_no": 83, "metadata": null}
+{"id": 74, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:39.823530Z", "frame_no": 83, "metadata": null}
+{"id": 75, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:40.126317Z", "frame_no": 85, "metadata": "{\"dwell_seconds\": 0.4}"}
+{"id": 76, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:40.147945Z", "frame_no": 85, "metadata": null}
+{"id": 77, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:40.276772Z", "frame_no": 86, "metadata": "{\"dwell_seconds\": 0.2}"}
+{"id": 78, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:40.296230Z", "frame_no": 86, "metadata": null}
+{"id": 79, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:40.582828Z", "frame_no": 88, "metadata": "{\"dwell_seconds\": 0.3}"}
+{"id": 80, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:40.606153Z", "frame_no": 88, "metadata": null}
+{"id": 81, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:40.771017Z", "frame_no": 89, "metadata": null}
+{"id": 82, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-01T17:07:41.466444Z", "frame_no": 95, "metadata": "{\"dwell_seconds\": 0.9}"}
+{"id": 83, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:41.488447Z", "frame_no": 95, "metadata": null}
+{"id": 84, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:41.510448Z", "frame_no": 95, "metadata": null}
+{"id": 85, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:42.618516Z", "frame_no": 104, "metadata": null}
+{"id": 86, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:42.638534Z", "frame_no": 104, "metadata": null}
+{"id": 87, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:43.108864Z", "frame_no": 108, "metadata": null}
+{"id": 88, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:44.286734Z", "frame_no": 117, "metadata": null}
+{"id": 89, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:44.308535Z", "frame_no": 117, "metadata": null}
+{"id": 90, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-01T17:07:44.650883Z", "frame_no": 119, "metadata": null}
+{"id": 91, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-01T17:07:44.809571Z", "frame_no": 120, "metadata": null}
+{"id": 92, "event_type": "zone_entered", "track_id": 7, "zone": "entrance", "timestamp": "2026-06-01T17:07:45.342217Z", "frame_no": 124, "metadata": null}
+{"id": 93, "event_type": "zone_entered", "track_id": 13, "zone": "foh", "timestamp": "2026-06-01T17:07:45.683750Z", "frame_no": 127, "metadata": null}
+{"id": 94, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:45.948569Z", "frame_no": 129, "metadata": null}
+{"id": 95, "event_type": "zone_entered", "track_id": 14, "zone": "entrance", "timestamp": "2026-06-01T17:07:47.385743Z", "frame_no": 141, "metadata": null}
+{"id": 96, "event_type": "person_exited", "track_id": 5, "zone": "foh", "timestamp": "2026-06-01T17:07:52.264453Z", "frame_no": 172, "metadata": "{\"reason\": \"track_lost\"}"}
+{"id": 97, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-01T17:07:52.484014Z", "frame_no": 173, "metadata": null}
+{"id": 98, "event_type": "zone_exited", "track_id": 13, "zone": "foh", "timestamp": "2026-06-01T17:07:53.538583Z", "frame_no": 179, "metadata": "{\"dwell_seconds\": 7.8}"}
+{"id": 99, "event_type": "zone_entered", "track_id": 13, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:53.566736Z", "frame_no": 179, "metadata": null}
+{"id": 100, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-01T17:07:55.874574Z", "frame_no": 192, "metadata": null}
+{"id": 101, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-01T17:07:56.622724Z", "frame_no": 196, "metadata": null}
+{"id": 102, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-06-01T17:07:57.365971Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 1, \"frames_processed\": 200}"}
+{"id": 103, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-06-02T17:03:09.842136Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 104, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-06-02T17:03:10.445387Z", "frame_no": 0, "metadata": null}
+{"id": 105, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-06-02T17:03:10.462963Z", "frame_no": 0, "metadata": null}
+{"id": 106, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-06-02T17:03:10.481961Z", "frame_no": 0, "metadata": null}
+{"id": 107, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:10.500956Z", "frame_no": 0, "metadata": null}
+{"id": 108, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-02T17:03:10.520960Z", "frame_no": 0, "metadata": null}
+{"id": 109, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-06-02T17:03:12.393494Z", "frame_no": 15, "metadata": null}
+{"id": 110, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:12.715117Z", "frame_no": 17, "metadata": null}
+{"id": 111, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:14.632931Z", "frame_no": 34, "metadata": null}
+{"id": 112, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:16.782971Z", "frame_no": 53, "metadata": null}
+{"id": 113, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-06-02T17:03:18.164902Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 7.7}"}
+{"id": 114, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-02T17:03:18.183971Z", "frame_no": 64, "metadata": null}
+{"id": 115, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:18.344674Z", "frame_no": 65, "metadata": null}
+{"id": 116, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-02T17:03:19.013094Z", "frame_no": 71, "metadata": null}
+{"id": 117, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-02T17:03:19.033096Z", "frame_no": 71, "metadata": null}
+{"id": 118, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:19.387127Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.0}"}
+{"id": 119, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:19.406199Z", "frame_no": 74, "metadata": null}
+{"id": 120, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:19.924001Z", "frame_no": 79, "metadata": null}
+{"id": 121, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:20.080077Z", "frame_no": 80, "metadata": null}
+{"id": 122, "event_type": "zone_entered", "track_id": 12, "zone": "skin_care", "timestamp": "2026-06-02T17:03:20.323791Z", "frame_no": 82, "metadata": null}
+{"id": 123, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:20.445421Z", "frame_no": 83, "metadata": "{\"dwell_seconds\": 1.1}"}
+{"id": 124, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:20.463484Z", "frame_no": 83, "metadata": null}
+{"id": 125, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:20.482891Z", "frame_no": 83, "metadata": null}
+{"id": 126, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:20.759000Z", "frame_no": 85, "metadata": "{\"dwell_seconds\": 0.3}"}
+{"id": 127, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:20.778000Z", "frame_no": 85, "metadata": null}
+{"id": 128, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:20.904077Z", "frame_no": 86, "metadata": "{\"dwell_seconds\": 0.2}"}
+{"id": 129, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:20.922074Z", "frame_no": 86, "metadata": null}
+{"id": 130, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:21.334319Z", "frame_no": 88, "metadata": "{\"dwell_seconds\": 0.4}"}
+{"id": 131, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:21.354309Z", "frame_no": 88, "metadata": null}
+{"id": 132, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:21.518914Z", "frame_no": 89, "metadata": null}
+{"id": 133, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-02T17:03:22.226172Z", "frame_no": 95, "metadata": "{\"dwell_seconds\": 0.9}"}
+{"id": 134, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:22.247168Z", "frame_no": 95, "metadata": null}
+{"id": 135, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:22.266168Z", "frame_no": 95, "metadata": null}
+{"id": 136, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:23.312977Z", "frame_no": 104, "metadata": null}
+{"id": 137, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:23.330976Z", "frame_no": 104, "metadata": null}
+{"id": 138, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:23.797269Z", "frame_no": 108, "metadata": null}
+{"id": 139, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:24.837803Z", "frame_no": 117, "metadata": null}
+{"id": 140, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:24.863744Z", "frame_no": 117, "metadata": null}
+{"id": 141, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-02T17:03:25.145707Z", "frame_no": 119, "metadata": null}
+{"id": 142, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-02T17:03:25.278760Z", "frame_no": 120, "metadata": null}
+{"id": 143, "event_type": "zone_entered", "track_id": 7, "zone": "entrance", "timestamp": "2026-06-02T17:03:25.830612Z", "frame_no": 124, "metadata": null}
+{"id": 144, "event_type": "zone_entered", "track_id": 13, "zone": "foh", "timestamp": "2026-06-02T17:03:26.184767Z", "frame_no": 127, "metadata": null}
+{"id": 145, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:26.434546Z", "frame_no": 129, "metadata": null}
+{"id": 146, "event_type": "zone_entered", "track_id": 14, "zone": "entrance", "timestamp": "2026-06-02T17:03:27.815387Z", "frame_no": 141, "metadata": null}
+{"id": 147, "event_type": "person_exited", "track_id": 5, "zone": "foh", "timestamp": "2026-06-02T17:03:31.185754Z", "frame_no": 172, "metadata": "{\"reason\": \"track_lost\"}"}
+{"id": 148, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-02T17:03:31.327061Z", "frame_no": 173, "metadata": null}
+{"id": 149, "event_type": "zone_exited", "track_id": 13, "zone": "foh", "timestamp": "2026-06-02T17:03:32.020007Z", "frame_no": 179, "metadata": "{\"dwell_seconds\": 5.8}"}
+{"id": 150, "event_type": "zone_entered", "track_id": 13, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:32.039203Z", "frame_no": 179, "metadata": null}
+{"id": 151, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-02T17:03:33.527849Z", "frame_no": 192, "metadata": null}
+{"id": 152, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-02T17:03:34.026601Z", "frame_no": 196, "metadata": null}
+{"id": 153, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-06-02T17:03:34.472034Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 1, \"frames_processed\": 200}"}
+{"id": 154, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:03:01.619168Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 155, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-06-03T14:03:02.295158Z", "frame_no": 0, "metadata": null}
+{"id": 156, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:03:02.319066Z", "frame_no": 0, "metadata": null}
+{"id": 157, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-06-03T14:03:02.345571Z", "frame_no": 0, "metadata": null}
+{"id": 158, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:03:02.373101Z", "frame_no": 0, "metadata": null}
+{"id": 159, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:03:02.401870Z", "frame_no": 0, "metadata": null}
+{"id": 160, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-06-03T14:03:04.770591Z", "frame_no": 15, "metadata": null}
+{"id": 161, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:03:05.101352Z", "frame_no": 17, "metadata": null}
+{"id": 162, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:03:07.117834Z", "frame_no": 34, "metadata": null}
+{"id": 163, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:03:09.619452Z", "frame_no": 53, "metadata": null}
+{"id": 164, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:03:11.205385Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 8.9}"}
+{"id": 165, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:03:11.235755Z", "frame_no": 64, "metadata": null}
+{"id": 166, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:03:11.523120Z", "frame_no": 65, "metadata": null}
+{"id": 167, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:03:12.405785Z", "frame_no": 71, "metadata": null}
+{"id": 168, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:03:12.457982Z", "frame_no": 71, "metadata": null}
+{"id": 169, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:03:12.887027Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.4}"}
+{"id": 170, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:03:12.909107Z", "frame_no": 74, "metadata": null}
+{"id": 171, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:03:13.327174Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 0, \"frames_processed\": 77}"}
+{"id": 172, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:05:59.638957Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 173, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-06-03T14:06:00.200510Z", "frame_no": 0, "metadata": null}
+{"id": 174, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:06:00.228948Z", "frame_no": 0, "metadata": null}
+{"id": 175, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-06-03T14:06:00.259239Z", "frame_no": 0, "metadata": null}
+{"id": 176, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:00.288313Z", "frame_no": 0, "metadata": null}
+{"id": 177, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:06:00.320305Z", "frame_no": 0, "metadata": null}
+{"id": 178, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-06-03T14:06:02.803741Z", "frame_no": 15, "metadata": null}
+{"id": 179, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:03.156083Z", "frame_no": 17, "metadata": null}
+{"id": 180, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:05.682807Z", "frame_no": 34, "metadata": null}
+{"id": 181, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:08.595303Z", "frame_no": 53, "metadata": null}
+{"id": 182, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:06:10.294088Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 10.1}"}
+{"id": 183, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:06:10.321359Z", "frame_no": 64, "metadata": null}
+{"id": 184, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:10.527054Z", "frame_no": 65, "metadata": null}
+{"id": 185, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:06:11.432267Z", "frame_no": 71, "metadata": null}
+{"id": 186, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:06:11.492779Z", "frame_no": 71, "metadata": null}
+{"id": 187, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:11.969153Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.5}"}
+{"id": 188, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:11.996416Z", "frame_no": 74, "metadata": null}
+{"id": 189, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:12.905340Z", "frame_no": 79, "metadata": null}
+{"id": 190, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:13.138230Z", "frame_no": 80, "metadata": null}
+{"id": 191, "event_type": "zone_entered", "track_id": 12, "zone": "skin_care", "timestamp": "2026-06-03T14:06:13.496068Z", "frame_no": 82, "metadata": null}
+{"id": 192, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:13.675929Z", "frame_no": 83, "metadata": "{\"dwell_seconds\": 1.7}"}
+{"id": 193, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:13.708850Z", "frame_no": 83, "metadata": null}
+{"id": 194, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:13.740321Z", "frame_no": 83, "metadata": null}
+{"id": 195, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:14.183497Z", "frame_no": 85, "metadata": "{\"dwell_seconds\": 0.5}"}
+{"id": 196, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:14.212789Z", "frame_no": 85, "metadata": null}
+{"id": 197, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:14.399006Z", "frame_no": 86, "metadata": "{\"dwell_seconds\": 0.2}"}
+{"id": 198, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:14.427681Z", "frame_no": 86, "metadata": null}
+{"id": 199, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:14.850504Z", "frame_no": 88, "metadata": "{\"dwell_seconds\": 0.4}"}
+{"id": 200, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:14.881787Z", "frame_no": 88, "metadata": null}
+{"id": 201, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:15.125834Z", "frame_no": 89, "metadata": null}
+{"id": 202, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:06:16.198972Z", "frame_no": 95, "metadata": "{\"dwell_seconds\": 1.3}"}
+{"id": 203, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:16.232649Z", "frame_no": 95, "metadata": null}
+{"id": 204, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:16.262542Z", "frame_no": 95, "metadata": null}
+{"id": 205, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:17.962330Z", "frame_no": 104, "metadata": null}
+{"id": 206, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:17.994707Z", "frame_no": 104, "metadata": null}
+{"id": 207, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:18.790680Z", "frame_no": 108, "metadata": null}
+{"id": 208, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:20.307216Z", "frame_no": 117, "metadata": null}
+{"id": 209, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:20.336925Z", "frame_no": 117, "metadata": null}
+{"id": 210, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:06:20.694921Z", "frame_no": 119, "metadata": null}
+{"id": 211, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:06:20.888523Z", "frame_no": 120, "metadata": null}
+{"id": 212, "event_type": "zone_entered", "track_id": 7, "zone": "entrance", "timestamp": "2026-06-03T14:06:21.573996Z", "frame_no": 124, "metadata": null}
+{"id": 213, "event_type": "zone_entered", "track_id": 13, "zone": "foh", "timestamp": "2026-06-03T14:06:22.074040Z", "frame_no": 127, "metadata": null}
+{"id": 214, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:22.517102Z", "frame_no": 129, "metadata": null}
+{"id": 215, "event_type": "zone_entered", "track_id": 14, "zone": "entrance", "timestamp": "2026-06-03T14:06:25.484930Z", "frame_no": 141, "metadata": null}
+{"id": 216, "event_type": "person_exited", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:06:31.425944Z", "frame_no": 172, "metadata": "{\"reason\": \"track_lost\"}"}
+{"id": 217, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:06:31.703605Z", "frame_no": 173, "metadata": null}
+{"id": 218, "event_type": "zone_exited", "track_id": 13, "zone": "foh", "timestamp": "2026-06-03T14:06:32.878718Z", "frame_no": 179, "metadata": "{\"dwell_seconds\": 10.8}"}
+{"id": 219, "event_type": "zone_entered", "track_id": 13, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:32.911883Z", "frame_no": 179, "metadata": null}
+{"id": 220, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:06:35.522761Z", "frame_no": 192, "metadata": null}
+{"id": 221, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:06:36.456240Z", "frame_no": 196, "metadata": null}
+{"id": 222, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:06:37.523615Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 1, \"frames_processed\": 200}"}
+{"id": 223, "event_type": "pipeline_started", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:09:32.950197Z", "frame_no": null, "metadata": "{\"metadata\": {\"source\": \"CAM 2.mp4\", \"resolution\": \"1920x1080\"}}"}
+{"id": 224, "event_type": "zone_entered", "track_id": 1, "zone": "entrance", "timestamp": "2026-06-03T14:09:33.414929Z", "frame_no": 0, "metadata": null}
+{"id": 225, "event_type": "zone_entered", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:09:33.440942Z", "frame_no": 0, "metadata": null}
+{"id": 226, "event_type": "zone_entered", "track_id": 3, "zone": "foh", "timestamp": "2026-06-03T14:09:33.469453Z", "frame_no": 0, "metadata": null}
+{"id": 227, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:33.495057Z", "frame_no": 0, "metadata": null}
+{"id": 228, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:09:33.528253Z", "frame_no": 0, "metadata": null}
+{"id": 229, "event_type": "zone_entered", "track_id": 6, "zone": "skin_care", "timestamp": "2026-06-03T14:09:35.798594Z", "frame_no": 15, "metadata": null}
+{"id": 230, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:36.151158Z", "frame_no": 17, "metadata": null}
+{"id": 231, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:38.579467Z", "frame_no": 34, "metadata": null}
+{"id": 232, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:41.543835Z", "frame_no": 53, "metadata": null}
+{"id": 233, "event_type": "zone_exited", "track_id": 2, "zone": "foh", "timestamp": "2026-06-03T14:09:43.303523Z", "frame_no": 64, "metadata": "{\"dwell_seconds\": 9.9}"}
+{"id": 234, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:09:43.332994Z", "frame_no": 64, "metadata": null}
+{"id": 235, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:43.558742Z", "frame_no": 65, "metadata": null}
+{"id": 236, "event_type": "person_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:09:44.444927Z", "frame_no": 71, "metadata": null}
+{"id": 237, "event_type": "zone_entered", "track_id": 2, "zone": "skin_care", "timestamp": "2026-06-03T14:09:44.510417Z", "frame_no": 71, "metadata": null}
+{"id": 238, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:44.996473Z", "frame_no": 74, "metadata": "{\"dwell_seconds\": 1.5}"}
+{"id": 239, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:45.037951Z", "frame_no": 74, "metadata": null}
+{"id": 240, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:46.418783Z", "frame_no": 79, "metadata": null}
+{"id": 241, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:46.690876Z", "frame_no": 80, "metadata": null}
+{"id": 242, "event_type": "zone_entered", "track_id": 12, "zone": "skin_care", "timestamp": "2026-06-03T14:09:47.213998Z", "frame_no": 82, "metadata": null}
+{"id": 243, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:47.490639Z", "frame_no": 83, "metadata": "{\"dwell_seconds\": 2.5}"}
+{"id": 244, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:47.524533Z", "frame_no": 83, "metadata": null}
+{"id": 245, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:47.553238Z", "frame_no": 83, "metadata": null}
+{"id": 246, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:47.985195Z", "frame_no": 85, "metadata": "{\"dwell_seconds\": 0.5}"}
+{"id": 247, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:48.013153Z", "frame_no": 85, "metadata": null}
+{"id": 248, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:48.267573Z", "frame_no": 86, "metadata": "{\"dwell_seconds\": 0.3}"}
+{"id": 249, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:48.310433Z", "frame_no": 86, "metadata": null}
+{"id": 250, "event_type": "zone_exited", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:48.955727Z", "frame_no": 88, "metadata": "{\"dwell_seconds\": 0.7}"}
+{"id": 251, "event_type": "zone_entered", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:48.997506Z", "frame_no": 88, "metadata": null}
+{"id": 252, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:49.330221Z", "frame_no": 89, "metadata": null}
+{"id": 253, "event_type": "zone_exited", "track_id": 7, "zone": "foh", "timestamp": "2026-06-03T14:09:50.695264Z", "frame_no": 95, "metadata": "{\"dwell_seconds\": 1.7}"}
+{"id": 254, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:50.722932Z", "frame_no": 95, "metadata": null}
+{"id": 255, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:50.754622Z", "frame_no": 95, "metadata": null}
+{"id": 256, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:52.467721Z", "frame_no": 104, "metadata": null}
+{"id": 257, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:52.494089Z", "frame_no": 104, "metadata": null}
+{"id": 258, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:53.249392Z", "frame_no": 108, "metadata": null}
+{"id": 259, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:54.942536Z", "frame_no": 117, "metadata": null}
+{"id": 260, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:54.972621Z", "frame_no": 117, "metadata": null}
+{"id": 261, "event_type": "zone_entered", "track_id": 7, "zone": "skin_care", "timestamp": "2026-06-03T14:09:55.388255Z", "frame_no": 119, "metadata": null}
+{"id": 262, "event_type": "zone_entered", "track_id": 11, "zone": "entrance", "timestamp": "2026-06-03T14:09:55.638865Z", "frame_no": 120, "metadata": null}
+{"id": 263, "event_type": "zone_entered", "track_id": 7, "zone": "entrance", "timestamp": "2026-06-03T14:09:56.456972Z", "frame_no": 124, "metadata": null}
+{"id": 264, "event_type": "zone_entered", "track_id": 13, "zone": "foh", "timestamp": "2026-06-03T14:09:57.062728Z", "frame_no": 127, "metadata": null}
+{"id": 265, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:09:57.496199Z", "frame_no": 129, "metadata": null}
+{"id": 266, "event_type": "zone_entered", "track_id": 14, "zone": "entrance", "timestamp": "2026-06-03T14:09:59.747452Z", "frame_no": 141, "metadata": null}
+{"id": 267, "event_type": "person_exited", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:10:05.188474Z", "frame_no": 172, "metadata": "{\"reason\": \"track_lost\"}"}
+{"id": 268, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:10:05.450277Z", "frame_no": 173, "metadata": null}
+{"id": 269, "event_type": "zone_exited", "track_id": 13, "zone": "foh", "timestamp": "2026-06-03T14:10:06.587613Z", "frame_no": 179, "metadata": "{\"dwell_seconds\": 9.5}"}
+{"id": 270, "event_type": "zone_entered", "track_id": 13, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:10:06.616030Z", "frame_no": 179, "metadata": null}
+{"id": 271, "event_type": "zone_entered", "track_id": 4, "zone": "bottom_shelf", "timestamp": "2026-06-03T14:10:08.984106Z", "frame_no": 192, "metadata": null}
+{"id": 272, "event_type": "zone_entered", "track_id": 5, "zone": "foh", "timestamp": "2026-06-03T14:10:09.749570Z", "frame_no": 196, "metadata": null}
+{"id": 273, "event_type": "pipeline_finished", "track_id": null, "zone": null, "timestamp": "2026-06-03T14:10:10.398362Z", "frame_no": null, "metadata": "{\"total_entries\": 1, \"total_exits\": 1, \"frames_processed\": 200}"}
