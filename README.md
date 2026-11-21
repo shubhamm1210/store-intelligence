@@ -94,7 +94,7 @@ cd store-intelligence
 ```bash
 python -m venv .venv
 # Windows
-.venv\\Scripts\\activate
+.venv\Scripts\activate
 # macOS / Linux
 source .venv/bin/activate
 ```
@@ -169,7 +169,18 @@ GitHub Actions runs these checks on pushes and pull requests.
 
 The current funnel counts **distinct tracker IDs** at each stage and caps later stages so they cannot exceed the preceding stage. This avoids repeated zone events inflating a track's count, but it is not a visit/session-level funnel: if a tracker ID represents multiple visits, those visits are currently merged.
 
-Performance benchmarks and POS transaction-alignment figures are not published yet. They require representative CCTV footage, the corresponding POS export, and a specified test machine. No FPS, latency, or conversion-accuracy number is assumed here.
+A repeatable benchmark script is available:
+
+```bash
+# From the repository root; provide a representative video file.
+python pipeline/benchmark.py --source "video/input.mp4" --max-frames 300 --warmup 10
+
+# Optionally measure the running API endpoints as well.
+python pipeline/benchmark.py --source "video/input.mp4" --max-frames 300 \\
+  --api-base http://127.0.0.1:8000 --api-requests 20
+```
+
+The inference FPS measures YOLO + ByteTrack model time only; it excludes video decoding, event persistence, overlays, and video encoding. Run it on the target machine and record the hardware and input video alongside the result. POS transaction-alignment figures still require the corresponding POS export. No benchmark or conversion-accuracy number is assumed in this repository.
 
 ## Screenshots
 
