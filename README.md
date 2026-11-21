@@ -49,12 +49,15 @@ Streamlit dashboard
 ```text
 store-intelligence/
 ├── api/
+│   ├── Dockerfile
 │   ├── routes/
 │   ├── database.py
 │   └── main.py
 ├── dashboard/
-├── dashboard-deploy/
+│   ├── Dockerfile
+│   └── app.py
 ├── pipeline/
+│   ├── Dockerfile
 │   ├── config.py
 │   ├── counter.py
 │   ├── detector.py
@@ -136,6 +139,19 @@ streamlit run app.py
 ```
 
 Dashboard: `http://localhost:8501`.
+
+## Docker Compose
+
+The repository includes separate Docker build configurations for the pipeline, API, and dashboard. The pipeline and API use a shared named volume for SQLite.
+
+Place your video at `video/input.mp4`, then run:
+
+```bash
+docker compose up --build -d api dashboard
+docker compose run --rm pipeline
+```
+
+The API is available at `http://localhost:8000/docs` and the dashboard at `http://localhost:8501`.
 
 ## Tests
 
