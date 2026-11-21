@@ -1,8 +1,13 @@
 venv/
+.venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.coverage
+htmlcov/
 events.db
 output.mp4
 *.mp4
 *.zip
 .env
+pipeline/*.pt

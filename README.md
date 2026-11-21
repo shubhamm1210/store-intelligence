@@ -2,240 +2,206 @@
 
 AI-powered retail analytics platform built for the **Purplle Tech Challenge 2026**.
 
-This system processes raw CCTV footage from retail stores and generates real-time business intelligence including footfall tracking, dwell-time analytics, zone heatmaps, conversion funnel metrics, and anomaly detection.
+The system processes retail CCTV footage and generates footfall, dwell-time, zone-traffic, conversion-funnel, and anomaly analytics. The current implementation processes a video source frame by frame; the analytics dashboard refreshes from the API.
 
-The project combines **Computer Vision**, **Real-Time Analytics**, **FastAPI**, and **Streamlit** into a modular production-style pipeline.
+## Features
 
----
+### Computer vision pipeline
+- YOLOv8 person detection
+- ByteTrack multi-object tracking
+- Configurable entry/exit counting line
+- Zone mapping and dwell-time tracking
+- Crowd, queue, and loitering anomaly events
 
-# Features
+### Analytics API
+- Footfall and occupancy metrics
+- Four-stage conversion funnel
+- Zone traffic and dwell-time summaries
+- Anomaly summaries and filtered event retrieval
+- FastAPI OpenAPI/Swagger documentation
 
-## Computer Vision Pipeline
+### Dashboard
+- KPI monitoring
+- Conversion-funnel visualization
+- Zone-level analytics
+- Anomaly alerts
 
-* YOLOv8-based person detection
-* Multi-object tracking
-* Entry/exit monitoring
-* Zone mapping and movement analysis
-* Dwell time tracking
+## Architecture
 
-## Real-Time Analytics
+```text
+CCTV video
+    ↓
+YOLOv8 person detection + ByteTrack tracking
+    ↓
+PersonCounter + zone mapping
+    ↓
+Structured events
+    ↓
+SQLite event store
+    ↓
+FastAPI analytics endpoints
+    ↓
+Streamlit dashboard
+```
 
-* Footfall metrics
-* Conversion funnel
-* Zone popularity analysis
-* Peak occupancy monitoring
-* Revenue-oriented behavioral analytics
-
-## API Layer
-
-* FastAPI analytics backend
-* Auto-generated OpenAPI/Swagger docs
-* Structured JSON responses
-* Modular route architecture
-
-## Dashboard
-
-* Live KPI monitoring
-* Conversion funnel visualization
-* Zone heatmap insights
-* Anomaly alerts
-* Real-time occupancy monitoring
-
----
-
-# System Architecture
-
-CCTV Footage
-↓
-YOLOv8 Person Detection
-↓
-Object Tracking + Zone Mapping
-↓
-Structured Event Generation
-↓
-SQLite Event Store
-↓
-FastAPI Analytics Engine
-↓
-Streamlit Dashboard
-
----
-
-# Tech Stack
-
-| Layer            | Technology     |
-| ---------------- | -------------- |
-| Detection        | YOLOv8         |
-| Tracking         | ByteTrack      |
-| Video Processing | OpenCV         |
-| Backend API      | FastAPI        |
-| Dashboard        | Streamlit      |
-| Database         | SQLite         |
-| Containerization | Docker Compose |
-
----
-
-# Project Structure
+## Repository structure
 
 ```text
 store-intelligence/
 ├── api/
+│   ├── Dockerfile
 │   ├── routes/
-│   ├── main.py
-│   └── database.py
-│
+│   ├── database.py
+│   └── main.py
 ├── dashboard/
+│   ├── Dockerfile
 │   └── app.py
-│
 ├── pipeline/
+│   ├── Dockerfile
+│   ├── config.py
+│   ├── counter.py
 │   ├── detector.py
-│   ├── zone_mapper.py
 │   ├── event_store.py
-│   └── config.py
-│
-├── DESIGN.md
+│   └── zone_mapper.py
+├── .github/workflows/
 ├── CHOICES.md
-├── docker-compose.yml
-├── Dockerfile
-└── README.md
+├── DESIGN.md
+└── docker-compose.yml
 ```
 
----
+## API endpoints
 
-# API Endpoints
+| Endpoint | Purpose |
+|---|---|
+| `/health` | Service health check |
+| `/metrics` | Store KPIs and analytics |
+| `/funnel` | Entry, browsing, billing, and conversion stages |
+| `/zones/heatmap` | Zone traffic and dwell-time analysis |
+| `/anomalies` | Crowd, queue, and loitering events |
+| `/docs` | Interactive Swagger documentation |
 
-| Endpoint         | Description                   |
-| ---------------- | ----------------------------- |
-| `/metrics`       | Store KPIs and analytics      |
-| `/funnel`        | Customer conversion funnel    |
-| `/zones/heatmap` | Zone traffic analysis         |
-| `/anomalies`     | Crowd and dwell anomalies     |
-| `/docs`          | Swagger/OpenAPI documentation |
+## Local setup
 
----
-
-# Local Setup
-
-## 1. Clone Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/shubhamm1210/store-intelligence.git
 cd store-intelligence
 ```
 
----
-
-## 2. Create Virtual Environment
+### 2. Create a virtual environment
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS / Linux
+source .venv/bin/activate
 ```
 
----
+### 3. Install pipeline dependencies
 
-# Run Detection Pipeline
+```bash
+pip install -r pipeline/requirements.txt
+```
+
+The detector loads the model specified by `MODEL_NAME` in `pipeline/config.py`. If the model file is not present, Ultralytics can download the named pretrained weight on first use when network access is available. For offline execution, provide the model file locally.
+
+### 4. Run the video pipeline
 
 ```bash
 cd pipeline
-pip install -r requirements.txt
-
-python detector.py --source "CAM 2.mp4" --max-frames 200
+python detector.py --source "path/to/video.mp4" --max-frames 200
 ```
 
-Generated outputs:
+Use `--no-video` to skip writing the annotated output.
 
-* `output.mp4`
-* `events.db`
+### 5. Run the API
 
----
-
-# Run FastAPI Backend
+In a separate terminal:
 
 ```bash
 cd api
 pip install -r requirements.txt
-
 uvicorn main:app --reload --port 8000
 ```
 
-Swagger/OpenAPI docs:
+Open `http://localhost:8000/docs` for interactive API documentation.
 
-```text
-http://localhost:8000/docs
-```
+### 6. Run the dashboard
 
----
-
-# Run Dashboard
+In another terminal:
 
 ```bash
 cd dashboard
 pip install -r requirements.txt
-
 streamlit run app.py
 ```
 
-Dashboard:
+Dashboard: `http://localhost:8501`.
 
-```text
-http://localhost:8501
+## Docker Compose
+
+The repository includes separate Docker build configurations for the pipeline, API, and dashboard. The pipeline and API use a shared named volume for SQLite.
+
+Place your video at `video/input.mp4`, then run:
+
+```bash
+docker compose up --build -d api dashboard
+docker compose run --rm pipeline
 ```
 
----
+The API is available at `http://localhost:8000/docs` and the dashboard at `http://localhost:8501`.
 
-# Screenshots
+## Tests
 
-## Detection Pipeline
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fb2171b3-6a2b-4fa9-9879-3f33807bdbab" />
+The counter tests use fake bounding-box tracks and mock event/database side effects. The funnel tests run the actual SQL against a temporary in-memory SQLite database. Neither test suite needs CCTV footage or pretrained model weights.
 
+```bash
+python -m pip install -r api/requirements.txt
+python -m pip install -r api/requirements-dev.txt pipeline/requirements-dev.txt
+python -m pytest -q pipeline/tests api/tests
+```
 
+GitHub Actions runs these checks on pushes and pull requests.
 
-## Dashboard
-<img width="1920" height="1080" alt="Screenshot (809)" src="https://github.com/user-attachments/assets/29b9e538-b6e8-40d7-88e8-c0cd540eb1f1" />
+## Funnel semantics and validation status
 
+The current funnel counts **distinct tracker IDs** at each stage and caps later stages so they cannot exceed the preceding stage. This avoids repeated zone events inflating a track's count, but it is not a visit/session-level funnel: if a tracker ID represents multiple visits, those visits are currently merged.
 
-## Swagger API Documentation
-<img width="1920" height="1080" alt="Screenshot (813)" src="https://github.com/user-attachments/assets/b8f5b806-483d-410d-9dda-16ae32ffe715" />
+A repeatable benchmark script is available:
 
+```bash
+# From the repository root; provide a representative video file.
+python pipeline/benchmark.py --source "video/input.mp4" --max-frames 300 --warmup 10
 
+# Optionally measure the running API endpoints as well.
+python pipeline/benchmark.py --source "video/input.mp4" --max-frames 300 \\
+  --api-base http://127.0.0.1:8000 --api-requests 20
+```
 
----
+The inference FPS measures YOLO + ByteTrack model time only; it excludes video decoding, event persistence, overlays, and video encoding. Run it on the target machine and record the hardware and input video alongside the result. POS transaction-alignment figures still require the corresponding POS export. No benchmark or conversion-accuracy number is assumed in this repository.
 
-# Engineering Decisions
+## Screenshots
 
-* **YOLOv8n** chosen for lightweight real-time inference.
-* **SQLite** selected for simplicity and reduced operational overhead.
-* **FastAPI** used for high-performance APIs and automatic Swagger documentation.
-* **Streamlit** used for rapid dashboard prototyping and visualization.
-* Modular architecture used for separation of concerns and scalability.
+### Detection pipeline
+![Detection pipeline](https://github.com/user-attachments/assets/fb2171b3-6a2b-4fa9-9879-3f33807bdbab)
 
-Detailed technical reasoning is available in:
+### Dashboard
+![Dashboard](https://github.com/user-attachments/assets/29b9e538-b6e8-40d7-88e8-c0cd540eb1f1)
 
-* `DESIGN.md`
-* `CHOICES.md`
+### Swagger API documentation
+![Swagger API documentation](https://github.com/user-attachments/assets/b8f5b806-483d-410d-9dda-16ae32ffe715)
 
----
+## Scope and limitations
 
-# Notes
+- The current configuration targets a single fixed camera view.
+- Staff are not classified separately.
+- Conversion is a behavioral proxy based on reaching the cash-counter zone and exiting; it is not a verified POS transaction.
+- Counting-line position and zone boundaries must be tuned for a different camera angle.
 
-* Dataset and CCTV footage are excluded from repository as per challenge guidelines.
-* System outputs dynamically vary based on video input.
-* Built during the Purplle Tech Challenge 2026.
+See [DESIGN.md](DESIGN.md) and [CHOICES.md](CHOICES.md) for architectural decisions and trade-offs.
 
----
+## Author
 
-# Future Improvements
-
-* Multi-camera identity re-identification
-* GPU acceleration
-* Kafka/Redis event streaming
-* Advanced behavioral analytics
-* Cloud-native deployment
-
----
-
-# Author
-
-Shubham Kumar
-Purplle Tech Challenge 2026
+**Shubham Kumar** · [GitHub](https://github.com/shubhamm1210) · [LinkedIn](https://www.linkedin.com/in/shubhamkumar1210/)

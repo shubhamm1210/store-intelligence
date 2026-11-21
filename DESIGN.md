@@ -86,7 +86,7 @@ time without losing data.
 | Endpoint | Logic |
 |---|---|
 | `/metrics` | Aggregates entry/exit counts, calculates conversion rate, avg dwell, peak occupancy |
-| `/funnel` | 4-stage session funnel with drop-off % at each stage — no double counting |
+| `/funnel` | 4-stage tracker-ID funnel with drop-off %; uses distinct track IDs and does not distinguish repeat visits by the same ID |
 | `/anomalies` | Returns all anomaly events with summary badge counts |
 | `/zones/heatmap` | Per-zone visitor counts joined with dwell time from zone_dwell table |
 
@@ -160,11 +160,11 @@ entrance from the shop floor for this camera angle. A polygon gate would require
 per-camera calibration with no accuracy benefit for single-entrance stores.
 
 ### 3. SQLite Schema Design
-AI was used to validate the two-table schema (events + zone_dwell). Specifically
-to confirm that separating raw events from dwell aggregation avoids write
-amplification and keeps queries simple. The schema was stress-tested against
-simulated 8-hour footage event volumes (~50k events) and confirmed to stay
-under 10MB.
+AI assistance was used to review the two-table schema (events + zone_dwell).
+Separating raw events from dwell aggregation keeps event queries and dwell-time
+calculations distinct. A reproducible inference/API benchmark is provided in
+`pipeline/benchmark.py`; no database stress-test result or storage-size result
+is claimed here.
 
 ### 4. Conversion Funnel Definition
 AI analysis of retail analytics literature informed the 4-stage funnel definition:

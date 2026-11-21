@@ -64,7 +64,16 @@ class PersonCounter:
                 crossed_down = prev < self.line_y <= cy   # top→bottom = entry
                 crossed_up   = prev > self.line_y >= cy   # bottom→top = exit
 
-                if crossed_down and tid not in self.active:
+                # Re-entry must be checked before the generic inactive case:
+                # an exited track is, by definition, not currently active.
+                if crossed_down and tid in self.exited:
+                    self.active.add(tid)
+                    self.exited.discard(tid)
+                    self.total_entries += 1
+                    emit("person_entered", track_id=tid, zone=zone,
+                         frame_no=frame_no, re_entry=True)
+
+                elif crossed_down and tid not in self.active:
                     self.active.add(tid)
                     self.total_entries += 1
                     emit("person_entered", track_id=tid, zone=zone, frame_no=frame_no)
@@ -74,14 +83,6 @@ class PersonCounter:
                     self.exited.add(tid)
                     self.total_exits += 1
                     emit("person_exited", track_id=tid, zone=zone, frame_no=frame_no)
-
-                # Re-entry: was exited, crossed line downward again
-                elif crossed_down and tid in self.exited:
-                    self.active.add(tid)
-                    self.exited.discard(tid)
-                    self.total_entries += 1
-                    emit("person_entered", track_id=tid, zone=zone,
-                         frame_no=frame_no, re_entry=True)
 
             self.prev_cy[tid] = cy
 
@@ -114,6 +115,7 @@ class PersonCounter:
             if tid in self.active:
                 # treat disappearance near exit as implicit exit
                 self.active.discard(tid)
+                self.exited.add(tid)
                 self.total_exits += 1
                 emit("person_exited", track_id=tid, zone=self.current_zone.get(tid, "unknown"),
                      frame_no=frame_no, reason="track_lost")
